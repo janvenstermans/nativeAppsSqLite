@@ -11,9 +11,6 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Extension of {@link ContentProvider} for diary entries.
  */

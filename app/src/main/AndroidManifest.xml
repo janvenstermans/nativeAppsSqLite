@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".DiaryOverview"
+            android:name=".DiaryActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +18,19 @@
         </activity>
 
         <provider
+            android:name=".provider.MyDb"
             android:authorities="com.tile.janv.sqllitediary.provider.diary"
-            android:name=".contentprovider.TestContentProvider" >
+            android:exported="false" >
         </provider>
 
+        <activity
+            android:name=".EntryAddActivity"
+            android:label="@string/title_activity_entry_add" >
+        </activity>
+        <activity
+            android:name=".EntryDetailActivity"
+            android:label="@string/title_activity_entry_detail" >
+        </activity>
     </application>
 
 </manifest>
